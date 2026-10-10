@@ -5,12 +5,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGO_URI = os.getenv(
-    "MONGO_URI",
-    "mongodb+srv://aquascan_admin:NavalOps2026@cluster0.0g7wapw.mongodb.net/aquascan_defense_db?retryWrites=true&w=majority&appName=Cluster0"
-)
+MONGO_URI = os.getenv("MONGO_URI")
 
 try:
+    if not MONGO_URI:
+        raise ValueError("MONGO_URI environment variable is not set")
     client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)
     db = client["aquascan_defense_db"]
     missions_col = db["mission_records"]
