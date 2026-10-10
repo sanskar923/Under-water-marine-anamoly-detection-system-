@@ -1,0 +1,46 @@
+{
+  "0": {
+    "name": "Ghost Fishing Net (Entanglement Danger)",
+    "severity": "MODERATE RISK HAZARD",
+    "diver_safety": "Approach with extreme care. Carry line-cutting shears; avoid loose gear that can snare.",
+    "marine_risk": "Continuous ghost-fishing; strangles sea turtles, cetaceans, and destroys coral outcrops.",
+    "default_coords": [
+      15.429058,
+      73.812242
+    ],
+    "location_name": "Marmagao Approach, Goa"
+  },
+  "1": {
+    "name": "Subsea Fuel Pipeline (Infrastructure Collision)",
+    "severity": "CRITICAL RISK HAZARD",
+    "diver_safety": "Do not anchor or drop clump weights. Verify cathodic protection without striking pipeline.",
+    "marine_risk": "Catastrophic hydrocarbon spill risk; toxicity to benthic benthic flora and fish breeding grounds.",
+    "default_coords": [
+      18.922,
+      72.834
+    ],
+    "location_name": "Bombay High Offshore Basin"
+  },
+  "2": {
+    "name": "Sunken Vessel Debris / Uncharted Wreck",
+    "severity": "HIGH RISK HAZARD",
+    "diver_safety": "Watch for sharp hull edges, unstable structural collapses, and entanglement in loose rigging.",
+    "marine_risk": "Heavy fuel oil entrapment; alters natural local tidal sediment drift vectors.",
+    "default_coords": [
+      9.965,
+      76.242
+    ],
+    "location_name": "Cochin Harbor Shoals"
+  },
+  "3": {
+    "name": "Clear Benthic Seabed / Normal Sediment",
+    "severity": "LOW / CLEAR",
+    "diver_safety": "Standard dive buddy procedures; verify isobaric acoustic bottom lock.",
+    "marine_risk": "Stable undisturbed marine ecosystem.",
+    "default_coords": [
+      13.0827,
+      80.2707
+    ],
+    "location_name": "Coromandel Coastal Shelf"
+  }
+}

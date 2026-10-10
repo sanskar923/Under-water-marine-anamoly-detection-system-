@@ -1,0 +1,29 @@
+{
+  "sample_fasta": "ATGCGATCGATCGTTTGATAGGCTAGCTAGCTA",
+  "blast_reference": {
+    "species_name": "Rhincodon typus (Whale Shark)",
+    "common_name": "Whale Shark",
+    "identity_percentage": 98.4,
+    "e_value": "1.2e-42",
+    "iucn_status": "ENDANGERED",
+    "status_badge": "🚨 IUCN RED LIST: ENDANGERED",
+    "habitat": "Pelagic & Coastal Upwelling Zones",
+    "action_dispatch": "Automated geo-alert dispatched to Marine Protected Area (MPA) Network"
+  },
+  "gnn_trophic_web": {
+    "inference_time_ms": 8.4,
+    "health_index": "Vulnerable (Stock Depletion Warning)",
+    "nodes": [
+      { "id": "phyto", "label": "Phytoplankton", "trophic_level": 1, "biomass_index": 0.88, "role": "Primary Producer" },
+      { "id": "anchovy", "label": "Anchovy", "trophic_level": 2, "biomass_index": 0.64, "role": "Pelagic Forage" },
+      { "id": "shark", "label": "Whale Shark", "trophic_level": 3.5, "biomass_index": 0.42, "role": "Protected Filter Feeder" },
+      { "id": "trawler", "label": "Commercial Trawler", "trophic_level": 4, "fishing_pressure": 0.78, "role": "Anthropogenic Harvest" }
+    ],
+    "edges": [
+      { "source": "phyto", "target": "anchovy", "energy_transfer": "0.14 kcal/m²", "type": "Trophic Ingestion" },
+      { "source": "anchovy", "target": "shark", "energy_transfer": "0.08 kcal/m²", "type": "Forage Sustenance" },
+      { "source": "trawler", "target": "anchovy", "depletion_rate": "78% MSY Cap", "type": "Stock Harvest" },
+      { "source": "trawler", "target": "shark", "bycatch_risk": "HIGH", "type": "Bycatch & Entanglement Hazard" }
+    ]
+  }
+}
